@@ -16,15 +16,15 @@ And navigate to **http://localhost:3000**
 * In **app.js**, you will need to supply your own MailChimp API key and server. Information on how to find these can be found [here](https://mailchimp.com/help/about-api-keys/)
 ```javascript
 mailchimp.setConfig({  
-    apiKey: "", // Note: API key can be found at https://<server>.admin.mailchimp.com/account/api/
-    server: ""
+    apiKey: "API_KEY", // Note: API key can be found at https://<server>.admin.mailchimp.com/account/api/
+    server: "SERVER_PREFIX"
 });
 ```
 
 * In **app.js**, you will also need to specify the ID corresponding to your created Audience. Information on how to create an Audience can be found [here](https://mailchimp.com/help/create-audience/), and information on how to find the Audience ID can be found [here](https://mailchimp.com/help/find-audience-id/)
 ```javascript
 const run = async() => {
-        const response = await mailchimp.lists.addListMember("", { // Note: Your audience ID goes here
+        const response = await mailchimp.lists.addListMember("AUDIENCE_ID", { // Note: Your audience ID goes here
             email_address: subscribingUser.email, // Structure: Email, First Name, Last Name. Please alter this if you require other fields.
             status: "subscribed",
             merge_fields: {
