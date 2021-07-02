@@ -16,8 +16,8 @@ And navigate to **http://localhost:3000**
 * In **app.js**, you will need to supply your own MailChimp API key and server. Information on how to find these can be found [here](https://mailchimp.com/help/about-api-keys/)
 ```javascript
 mailchimp.setConfig({  
-    apiKey: "API_KEY", // Note: API key can be found at https://<server>.admin.mailchimp.com/account/api/
-    server: "SERVER_PREFIX"
+    apiKey: "API_KEY", // Note: API key can be found at https://<server-prefix>.admin.mailchimp.com/account/api/
+    server: "SERVER_PREFIX" // Note: e.g. us19.
 });
 ```
 
