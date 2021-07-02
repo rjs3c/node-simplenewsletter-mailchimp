@@ -31,7 +31,7 @@ const run = async() => {
 
 * By default, the fields on the signup form are **Email Address**, **First Name** and **Last Name**. If you have different Audience fields, changes should be made to **signup.html** and **app.js** to reflect this. To add more Audience fields in MailChimp, more information can be found [here](https://mailchimp.com/help/manage-audience-signup-form-fields/) (*Add and delete fields in the audience settings*)
 
-signup.html:
+**signup.html**:
 ```html
 <form class="form-signin" action="/" method="post">
         <h1 class="h3 mb-3 fw-normal">Signup to My Newsletter!</h1>
@@ -43,7 +43,7 @@ signup.html:
         <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
     </form>
 ```
-app.js:
+**app.js**:
 ```javascript
 const run = async() => {
         const response = await mailchimp.lists.addListMember("", { // Note: Your audience ID goes here
