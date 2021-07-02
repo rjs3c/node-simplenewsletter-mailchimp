@@ -26,14 +26,7 @@ mailchimp.setConfig({
 ```javascript
 const run = async() => {
         const response = await mailchimp.lists.addListMember("AUDIENCE_ID", { // Note: Your audience ID goes here
-            email_address: subscribingUser.email, // Structure: Email, First Name, Last Name. Please alter this if you require other fields.
-            status: "subscribed",
-            merge_fields: {
-                FNAME: subscribingUser.firstName,
-                LNAME: subscribingUser.lastName
-            }
-        });
-    };
+            ...
 ```
 
 * By default, the fields on the signup form are **Email Address**, **First Name** and **Last Name**. If you have different Audience fields, changes should be made to **signup.html** and **app.js** to reflect this. To add more Audience fields in MailChimp, more information can be found [here](https://mailchimp.com/help/manage-audience-signup-form-fields/) (*Add and delete fields in the audience settings*)
