@@ -6,6 +6,13 @@ node app.js
 ```
 And navigate to **http://localhost:3000**
 
+## Install dependencies
+```
+npm i @mailchimp/mailchimp_marketing
+npm i body-parser
+npm i express
+```
+
 ## Additional information
 
 * In **app.js**, you will need to supply your own MailChimp API key and server. Information on how to find these can be found [here](https://mailchimp.com/help/about-api-keys/)
