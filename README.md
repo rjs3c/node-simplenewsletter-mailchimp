@@ -1,4 +1,4 @@
-# simple-node-mailchimp
+# node-simplenewsletter-mailchimp
 A Basic Newsletter Signup Page that Integrates with MailChimp's Marketing API.
 ## Run the application
 ```
