@@ -3,9 +3,7 @@ A Simple Node Newsletter Integration of MailChimp's Marketing API.
 *With capability to scale-up using Cloud Deployment.*
 ## Install dependencies
 ```
-npm i @mailchimp/mailchimp_marketing
-npm i body-parser
-npm i express
+npm i
 ```
 ## Run the application
 ```
